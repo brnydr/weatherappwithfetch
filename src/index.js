@@ -36,3 +36,10 @@ function handleFormSubmission(event) {
 window.addEventListener("load", function() {
   document.querySelector('form').addEventListener("submit", handleFormSubmission);
 });
+
+
+
+// fetch(url)
+// .then(response => response.json())
+// .then(data => printElements(data))
+// .catch(err => console.log(err))
