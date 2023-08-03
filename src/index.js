@@ -11,9 +11,9 @@ function getWeather(city) {
       if (response.main) {
         printElements(response, city);
       } else {
-        printError(response, city);
-      }
-    });
+      printError(response, city);
+     }
+  });
 }
 
 // UI Logic
