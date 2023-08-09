@@ -32,6 +32,30 @@ async function getAPIData(city) {
   }
 }
 
+// function getAPIData(city) {
+//   WeatherService.getWeather(city)
+//     .then(function(weatherResponse) {
+//       if (weatherResponse instanceof Error) {
+//         const errorMessage = `there was a problem accessing the weather data from OpenWeather API for ${city}: 
+//         ${weatherResponse.message}`;
+//         throw new Error(errorMessage);
+//       } 
+//       const description = weatherResponse.weather[0].description;
+//       printWeather(description, city);
+//       return GiphyService.getGif(description);
+//     })
+//     .then(function(giphyResponse) {
+//       if (giphyResponse instanceof Error) {
+//         const errorMessage = `there was a problem accessing the gif data from Giphy API: 
+//         ${giphyResponse.message}.`;
+//         throw new Error(errorMessage);
+//       } 
+//       displayGif(giphyResponse, city);
+//     })
+//     .catch(function(error) {
+//       printError(error);
+//     });
+// }
 
 // UI Logic
 
